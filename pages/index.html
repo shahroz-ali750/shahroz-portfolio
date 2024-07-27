@@ -11,6 +11,7 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <title>Shahroz Portfolio</title>
   </head>
@@ -20,8 +21,7 @@
         <a
           class="navbar-brand text-white p-md-3 p-sm-2 wow slideInLeft bg-black"
           href="#"
-          >Shahroz
-          <span class="text-warning border-bottom bg-black">Portfolio</span></a
+          >Shahroz <span class="bg-black">Portfolio</span></a
         >
         <button
           class="navbar-toggler bg-warning"
@@ -38,12 +38,7 @@
           id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link text-warning"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
+              <a class="nav-link text-warning" href="#">Home</a>
             </li>
             <li class="nav-item bg-black">
               <a class="nav-link text-white" href="./about.html">About</a>
@@ -64,8 +59,36 @@
         </div>
       </div>
     </nav>
+    <section class="sec-1">
+      <div class="container py-md-5 py-sm-2">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h2>Hi there!, <span class="emoji">👋</span></h2>
+            <h2>I am Shahroz Nisar</h2>
+            <h2>And I'm a <span class="animation" id="text"></span></h2>
+          </div>
+          <div class="col-12 col-md-6"></div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-7">
+           <p class="text-justify">Embark on a visual journey through a curated collection of my creative
+            endeavors and professional achievements. As a Developer with a passion
+            for Front-end, I blend innovation and expertise to deliver compelling
+            and impactful projects. This portfolio is a testament to my dedication
+            to excellence, showcasing a diverse range of skills in
+            HTML, CSS, JS & React. Join me on this exploration of design,
+            development, and beyond, as I invite you to witness the intersection
+            of imagination and proficiency in every pixel and line of code.
+            Welcome to the intersection of creativity and competence - Welcome to
+            my portfolio.</p>
+            <button class="w-50 border border-0 p-2 rounded rounded-2 bg-orange">Let's Go <span class="bi-arrow-right bg-transparent"></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/typing.animation.js"></script>
   <script src="/js/wow.js"></script>
   <script>
     new WOW().init();
