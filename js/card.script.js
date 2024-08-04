@@ -193,7 +193,7 @@ let div = document.querySelector("#card");
 
 cards.forEach((x) => {
   div.innerHTML += `
-  <div class="col-12 col-md-12 col-xl-6 col-xxl-4 ">
+  <div class="col-12 col-md-12 col-xl-6 col-xxl-4 media ">
         <div class="card mx-0 mx-md-5 my-sm-3 my-md-3 bg-black border border-5 " id="${x.id}">
             <div>
                 <p class="text-start fw-bold fs-4 px-3 pt-2 txt-orange bg-black">${x.title}</p>

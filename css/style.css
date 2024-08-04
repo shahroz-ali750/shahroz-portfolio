@@ -4,18 +4,19 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
-  background-color: #222222;
+  background: #222222;
   color: #ffffff;
 }
-.txt-orange{
+.txt-orange {
   color: #ff8b00;
 }
-.bg-orange{
+.bg-orange {
   background-color: #ff8b00;
 }
-nav a span{
-  color:  #ff8b00;
-  border-bottom: 3px solid  #ff8b00;
+/* navbar */
+nav a span {
+  color: #ff8b00;
+  border-bottom: 3px solid #ff8b00;
 }
 nav ul li {
   background-color: black;
@@ -24,9 +25,55 @@ nav ul li {
 nav li a:hover {
   display: inline-block;
   color: #ff8b00;
-  border-bottom: 2px solid  #ff8b00;
+  border-bottom: 2px solid #ff8b00;
   position: relative;
   bottom: 5px;
+}
+/* sec-banner */
+.connect-links {
+  display: flex;
+  justify-content: space-between;
+}
+.connect-links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border: 2px solid #ff8b00;
+  border-radius: 50%;
+  font-size: 20px;
+  padding-bottom: 5px;
+  transition: 0.5s ease;
+  animation: slideLeft 2s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+.connect-links a:hover {
+  position: relative;
+  top: -5px;
+  box-shadow: 0 0 30px #ff8b00;
+}
+/* sec-about */
+.sec-title-divider {
+  position: relative;
+  width: 120px !important;
+  border-bottom: 1px solid rgba(173, 216, 230, 0.452);
+  margin: auto;
+  padding-top: 10px;
+}
+.sec-title-divider::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid #ff8b00;
+  width: 45px;
+  margin: auto;
+}
+.text-justify {
+  text-align: justify;
 }
 .animation {
   color: #ff8b00;
@@ -36,6 +83,31 @@ nav li a:hover {
   font-size: 60px;
   animation: waving-hand 2.5s infinite;
   transform-origin: 70% 70%;
+}
+
+/* progress_bar */
+.progress {
+  position: relative;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  background: #ddd;
+  height: 30px;
+  width: 400px;
+  border-radius: 20px;
+}
+.progress-done {
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: #fff;
+  height: 100%;
+  background: linear-gradient(to left, #ff8b00, rgb(253, 157, 12));
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  width: 0;
+  box-shadow: 0 0 3px -5px #ff8b00, 0 3px 150px #ff8b00;
+  transition: width 0.5s ease;
 }
 @keyframes waving-hand {
   0% {
@@ -63,6 +135,14 @@ nav li a:hover {
     transform: rotate(0deg);
   }
 }
-.text-justify{
-  text-align: justify;
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
