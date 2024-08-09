@@ -9,6 +9,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -68,8 +71,13 @@
               And I'm a <span class="animation" id="text"></span>
             </h2>
           </div>
-          <div class="col-12 my-sm-3 col-md-6">
-            <img class="img-fluid" src="../assets/images/Twitter.png" alt="" />
+          <div class="col-9 my-sm-3 col-md-4">
+            <div class="img-cus">
+              <img
+                class="img-fluid"
+                src="../assets//images/file (2).png"
+                alt="" />
+            </div>
           </div>
           <div class="col-12 col-md-6">
             <p class="text-justify">
@@ -86,7 +94,7 @@
             </p>
             <a href="../pages/project.html"
               ><button
-                class="w-50 wow fadeInUpBig border border-0 p-2 rounded rounded-2 bg-orange">
+                class="w-50 transition border border-0 p-2 rounded rounded-2 bg-orange">
                 Let's Go
                 <span class="bi-arrow-right bg-transparent"></span></button
             ></a>
@@ -107,7 +115,7 @@
     <section class="sec-about">
       <div class="container py-md-5 py-sm-0 p-sm-4">
         <div class="row">
-          <h2 class="text-center">About <span class="">Me </span></h2>
+          <h2 class="text-center">About <span>Me </span></h2>
           <div class="sec-title-divider my-2"></div>
           <h6 class="text-secondary text-start">
             <span class="bi-stack"></span> Who am I?
@@ -123,11 +131,18 @@
               <button
                 class="bg-orange p-1 my-sm-3 border-0 rounded-2 w-50 fs-6"
                 id="cvButton">
-                Download CV
+                Download CV <span class="bi-download bg-orange"></span>
               </button>
             </div>
           </div>
-          <div class="col-12 col-md-6"></div>
+          <div class="col-9 col-md-4">
+            <div class="img-cus">
+              <img
+                class="img-fluid"
+                src="../assets//images/file (2).png"
+                alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -139,51 +154,59 @@
             My <span class="txt-orange">Skills </span>
           </h2>
           <div class="sec-title-divider my-2"></div>
-          <h6 class="text-secondary text-start">
-            <span class="bi-stack"></span> skills
-          </h6>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="my-md-5">
-                <span></span>
-                <h6 class="text-start">HTML</h6>
-                <div class="progress">
-                  <div class="progress-done" data - done="80"></div>
-                </div>
-              </div>
-              <div class="my-md-5">
-                <span></span>
-                <h6 class="text-start">HTML</h6>
-                <div class="progress">
-                  <div class="progress-done" data - done="80"></div>
-                </div>
+          <div class="d-flex justify-content-around">
+            <div>
+              <h6 class="text-secondary text-start">
+                <span class="bi-stack"></span> Technical skills
+              </h6>
+            </div>
+            <div>
+              <h6>
+                <span class="bi-person-circle"> Professional Skills</span>
+              </h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-5">
+            <div class="progress-container">
+              <span class="d-flex">
+                <i class="bx bxl-html5 bg-danger"></i>
+              </span>
+              <label for="htmlProgress">HTML</label>
+              <div class="progress">
+                <div id="htmlProgress" class="progress-done"></div>
               </div>
             </div>
-            <div class="col-md-6"></div>
-          </div>
+            <div class="progress-container">
+              <span class="d-flex">
+                <i class="bx bxl-css3 bg-primary"></i>
+              </span>
 
-          <div class="my-md-5">
-            <span></span>
-            <h6 class="text-start">HTML</h6>
-            <div class="progress">
-              <div class="progress-done" data - done="80"></div>
+              <label for="cssProgress">CSS</label>
+              <div class="progress">
+                <div id="cssProgress" class="progress-done"></div>
+              </div>
+            </div>
+            <div class="progress-container">
+              <span class="d-flex">
+                <i class="bx bxl-javascript text-warning"></i>
+              </span>
+
+              <label for="jsProgress">JavaScript</label>
+              <div class="progress">
+                <div id="jsProgress" class="progress-done"></div>
+              </div>
+            </div>
+            <div class="progress-container">
+              <span class="d-flex">
+                <i class="bx bxl-react text-info"></i>
+              </span>
+
+              <label for="reactProgress">React</label>
+              <div class="progress">
+                <div id="reactProgress" class="progress-done"></div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-md-5 my-md-5">
-            <span></span>
-            <h6 class="text-start">HTML</h6>
-            <div class="progress">
-              <div class="progress-done" data - done="80"></div>
-            </div>
-          </div>
-          <div class="col-12 col-md-5 my-md-5">
-            <span></span>
-            <h6 class="text-start">HTML</h6>
-            <div class="progress">
-              <div class="progress-done" data - done="80"></div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6"></div>
         </div>
       </div>
     </section>
@@ -196,4 +219,6 @@
   <script>
     new WOW().init();
   </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 </html>
