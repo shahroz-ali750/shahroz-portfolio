@@ -68,14 +68,12 @@ cardCounter.innerText = `Templates Listing: ${counter}`;
 
 // Cards Listing Error Handling
 
-listErr = document.getElementById("listingError")
+listErr = document.getElementById("listingError");
 
-if (counter === 0){
-    listingError.style.display = "block"
-}
-
-else{
-    listingError.style.display = "none"
+if (counter === 0) {
+  listingError.style.display = "block";
+} else {
+  listingError.style.display = "none";
 }
 
 // search box
