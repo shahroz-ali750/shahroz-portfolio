@@ -153,6 +153,7 @@ nav li a:hover {
   font-weight: bold;
   line-height: 120px;
   text-align: center;
+  background: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -191,6 +192,14 @@ nav li a:hover {
 .cus-icon {
   font-size: 35px;
   color: #ff8b00;
+}
+/* my projects */
+.cus-border {
+  border: 3px solid #ff8b00;
+}
+.item-1:hover {
+  box-shadow: 0px 0px 50px #ff8b00, 0px 0px 30px #e2e608, 0px 0px 15px #5cec08;
+  transition: 2s;
 }
 
 @keyframes waving-hand {
@@ -250,5 +259,24 @@ nav li a:hover {
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+/* media query */
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .media {
+    margin-top: 20px;
+  }
+  footer {
+    h5 {
+      font-size: 10px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .media-2 {
+    position: relative;
+    left: 35px;
   }
 }
